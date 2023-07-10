@@ -1,0 +1,42 @@
+﻿<%@ Master Page Language="C#" AutoEventWireup="true" CodeBehind="Adminmaster.Master.cs" Inherits="MADSshop.Views.Admin.Adminmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../Assets/Lib/css/bootstrap.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 bg-teal">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="" />
+                    </div>
+                    <div class="col-10">
+                        <h4 class="text-center">MADSshop</h4>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-9 ">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

@@ -77,10 +77,50 @@
     <Content Include="Assets\Lib\js\bootstrap.bundle.min.js" />
     <Content Include="Assets\Lib\js\bootstrap.js" />
     <Content Include="Assets\Lib\js\bootstrap.min.js" />
+    <Content Include="Views\Admin\Authors.aspx" />
+    <Content Include="Views\Admin\Books.aspx" />
+    <Content Include="Views\Admin\Categories.aspx" />
+    <Content Include="Views\Admin\Seller.aspx" />
     <Content Include="Views\Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Functions.cs" />
+    <Compile Include="Views\Admin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Authors.aspx.cs">
+      <DependentUpon>Authors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Authors.aspx.designer.cs">
+      <DependentUpon>Authors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Books.aspx.designer.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Seller.aspx.cs">
+      <DependentUpon>Seller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Seller.aspx.designer.cs">
+      <DependentUpon>Seller.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -102,6 +142,7 @@
     <Content Include="Assets\Lib\js\bootstrap.js.map" />
     <Content Include="Assets\Lib\js\bootstrap.min.js.map" />
     <None Include="packages.config" />
+    <Content Include="Views\Admin\Admin.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,7 +152,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\Images\" />
-    <Folder Include="Views\Admin\" />
     <Folder Include="Views\Seller\" />
   </ItemGroup>
   <PropertyGroup>

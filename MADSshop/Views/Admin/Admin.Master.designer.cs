@@ -11,7 +11,7 @@ namespace MADSshop.Views.Admin
 {
 
 
-    public partial class Adminmaster
+    public partial class Admin
     {
 
         /// <summary>
